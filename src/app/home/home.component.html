@@ -1,0 +1,7 @@
+
+<h1>簡單使用 Pipes</h1>
+<p>Total price of product is {{ price | currency }}</p>
+<h1>optional parameters to modify the output (pipeName: parameterValue), also multiple parameters (pipeName: parameter1: parameter2)</h1>
+<p>Total price of product is {{ price | currency: "CAD": true: "1.2-4" }}</p>
+<h1>Chaining Pipes</h1>
+<p>Total price of product is {{ price | currency:"CAD":true:"1.2-4" | lowercase }}

@@ -1,0 +1,15 @@
+<h1>Custom Piples</h1>
+<h2>Capitalize</h2>
+<p>My name is <strong>{{ name | capitalize }}</strong>.</p>
+<h2>Format file size</h2>
+<div>
+    <p *ngFor="let f of fileSizes">{{ f | formatFileSize }}</p>
+    <p>{{ largeFileSize | formatFileSize:true }}</p>
+  </div>
+ 
+  <h2>Power Boost Calculator</h2>
+  <div>Normal power: <input [(ngModel)]="power"></div>
+  <div>Boost factor: <input [(ngModel)]="factor"></div>
+  <p>
+    Super Hero Power: {{power | exponentialStrength: factor}}
+  </p>

@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  text-indent: 20px;
+}
+div {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+.active {
+  background-color: greenyellow;
+}

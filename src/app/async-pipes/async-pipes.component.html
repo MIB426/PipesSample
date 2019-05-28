@@ -1,0 +1,10 @@
+<h1>AsyncPipe</h1>
+<div class="info">
+    <p>AsyncPipe can receive a Promise or Observable as input and subscribe to the input
+    automatically, eventually returning the emitted value(s). </p><p>It is stateful because the pipe
+    maintains a subscription to the input and its returned values depend on that subscription.
+    </p>
+
+  </div>
+  <p>Total price of product is {{fetchPrice | async | currency:"CAD":true:"1.2-2"}}</p>
+  <p>Seconds: {{seconds | async}} </p>
